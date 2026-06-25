@@ -245,23 +245,3 @@ Fügt eine `JList` oder `JTextArea` hinzu, die alle durchgeführten Berechnungen
 
 ---
 
-## Zusammenfassung – Was ihr heute lernt
-
-| Thema | Inhalt |
-|---|---|
-| **GUI Designer** | Arbeiten mit IntelliJ Swing UI Designer, `.form`-Dateien |
-| **Swing-Komponenten** | JFrame, JPanel, JTextField, JButton, JTextArea |
-| **Layout-Manager** | GridBagLayout, GroupLayout |
-| **Event-Handling** | ActionListener, ActionCommand |
-| **Tastatur-Steuerung** | KeyStroke, registerKeyboardAction |
-| **Schichtenarchitektur** | GUI trennt sich von Geschäftslogik (Taschenrechner-Klassen) |
-
----
-
-## Optional: Zusatzaufgaben für Schnelle
-
-1. **Klammerrechnung:** Erweitert den Taschenrechner um Klammern `()` und einen Ausdrucksparser (z. B. `exp4j`-Bibliothek).
-2. **Dark Mode:** Fügt einen Button zum Umschalten zwischen hellem und dunklem Design hinzu.
-3. **Tastatur-Fokus:** Wenn eine Zahl gedrückt wird, soll die zuletzt gedrückte Zahl-Taste kurz aufleuchten (setzt die `background`-Farbe mit einem `Timer` zurück).
-4. **Zwischenablage:** `Strg+C` / `Strg+V` für das Display.
-5. **Unit-Tests:** Schreibt JUnit-Tests für die `SwingUI` (z. B. mit `AssertJ Swing`).
