@@ -5,10 +5,10 @@ import java.util.Scanner;
 
 public class KonsolenUI {
 
-    private Taschenrechner rechner;
+    private WissenschaftlicherTaschenrechner rechner;
     private Scanner scanner;
 
-    public KonsolenUI(Taschenrechner rechner) {
+    public KonsolenUI(WissenschaftlicherTaschenrechner rechner) {
         this.rechner = rechner;
         this.scanner = new Scanner(System.in);
     }
@@ -48,16 +48,33 @@ public class KonsolenUI {
         System.out.println("4) Division       (/)");
         System.out.println("5) Potenz         (x^y)");
         System.out.println("6) Wurzel         (√x)");
+        System.out.println("7) Cosinus        (cos)");
+        System.out.println("8) Sinus          (sin)");
+        System.out.println("9) Logarithmus    (ln)");
         System.out.println("0) Beenden");
         System.out.print("Deine Auswahl: ");
     }
 
     private void verarbeiteAuswahl(int auswahl) {
 
-        if (auswahl == 6) {
+        if (auswahl >= 6 && auswahl <= 9) {
             System.out.print("Zahl: ");
             double a = scanner.nextDouble();
-            System.out.println("Ergebnis: √" + a + " = " + rechner.wurzel(a));
+
+            switch (auswahl) {
+                case 6:
+                    System.out.println("Ergebnis: √" + a + " = " + rechner.wurzel(a));
+                    break;
+                case 7:
+                    System.out.println("Ergebnis: cos(" + a + ") = " + rechner.cosinus(a));
+                    break;
+                case 8:
+                    System.out.println("Ergebnis: sin(" + a + ") = " + rechner.sinus(a));
+                    break;
+                case 9:
+                    System.out.println("Ergebnis: ln(" + a + ") = " + rechner.logarithmus(a));
+                    break;
+            }
 
         } else if (auswahl >= 1 && auswahl <= 5) {
 
@@ -89,7 +106,7 @@ public class KonsolenUI {
             }
 
         } else {
-            System.out.println("Ungültige Auswahl! Bitte 0 bis 6 eingeben.");
+            System.out.println("Ungültige Auswahl! Bitte 0 bis 9 eingeben.");
         }
     }
 }
