@@ -7,7 +7,7 @@ Ihr habt bereits einen konsolenbasierten Taschenrechner gebaut (`KonsolenUI`). H
 ## Vorbereitung
 
 1. Öffnet das Projekt in IntelliJ IDEA.
-2. Vergewissert euch, dass die Klasse `forms/Taschenrechner.java` existiert (sie ist bereits angelegt – nur das Package `org.example.forms`).
+2. Vergewissert euch, dass die Klasse `forms/Taschenrechner.java` existiert (sie ist bereits angelegt – nur das Package `org.example.forms` muss noch angelegt werden).
 3. **Lest die Verknüpfung** zwischen einer `.form`-Datei und einer Java-Klasse:
    - https://www.jetbrains.com/help/idea/design-gui-using-swing.html
 
